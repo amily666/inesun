@@ -1,0 +1,260 @@
+body{
+  font:12px "microsoft yahei",Arial,Helvetica,sans-serif;
+  color:#333;
+  margin:0;
+  padding:0;
+}
+.container{
+  width:1000px;
+  margin:0 auto;
+  box-sizing: border-box;
+}
+.fl{float:left}
+.fr{float:right}
+.clearfloat:after{
+  content:"";display:table;clear: both;
+}
+ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+  padding:0;
+}
+ul,ol{
+  list-style: none;
+}
+
+a:link,a:visited{
+  text-decoration: none;
+  color:#333;
+};
+
+a:hover,a:active{
+  text-decoration: underline;
+  color: red;
+};
+
+/*header*/
+.header_top{
+  box-shadow: 0 5px 5px -5px;
+  >p{ display:inline-block; margin:12px 0;}
+  ul{//margin: 12px 0;
+    li{float:left;
+      line-height: 40px;
+      span{margin:0 5px};
+      &:last-child{
+        padding-right:15px;
+        background:url("../images/header.gif") 19px 0 no-repeat;
+        position:relative;
+      }
+    }
+  }
+}
+
+.currencies{
+  display:none;
+  line-height: 16px;
+  width:143px;
+  height:114px;
+  border:1px solid #4cf;
+  border-top:none;
+  background:url("../images/header.gif") -58px 0 no-repeat;
+  position:absolute;
+  top:40px;
+  right:0;
+  z-index: 200;
+  a{
+    display: inline-block;
+    margin-left: 34px;
+    padding-bottom:3px;
+    &:first-child{
+      padding-top:13px;
+    }
+  }
+}
+/*header_logo*/
+.header_logo{
+  margin-top:25px;
+  div{float:left}
+  .logo{
+    width:340px;height:auto}
+  .search{width:420px;height:auto;
+    input{
+      box-sizing: border-box;
+      width:330px;
+      height:30px;
+      padding-left:6px;
+      border:1px solid #bbb;
+      border-right:none;
+
+    }
+    button{width:75px;
+      height:30px;
+      box-sizing: border-box;
+    }
+    p{
+      width:405px;
+      height:32px;
+      overflow:hidden;
+    }
+  }
+  .service{
+    width:195px;
+    .online_box{
+      box-sizing: border-box;
+      margin-left:50px;
+      height:60px;
+      padding:20px 0 0 50px;
+      background:url("../images/header.gif") -50px -130px no-repeat;
+      .online_wrap{
+        position: relative;
+        ul{
+          background:linear-gradient(to bottom,#fff,#E3F0F8);
+          background: -ms-linear-gradient(to bottom,#fff,#E3F0F8);
+          background:-moz-linear-gradient(to bottom,#fff,#E3F0F8);
+          padding:8px 10px;
+          border:1px solid #44ccff;
+          border-top:none;
+          position:absolute;
+          top:26px;
+          left: -69px;
+          z-index: 200;
+          //display:none;
+
+        }
+        li{padding:5px 0;}
+        li:first-child,li:nth-child(3){
+          text-align: center;
+          font-size:14px;
+        }
+      }
+    }
+  }
+}
+
+
+/*页头导航条*/
+nav{
+  background: #125AE2;
+  ul li{
+    float:left;
+    &.active{background:#0148CF; }
+
+  }
+}
+
+nav>.container ul li a{
+  display: block;
+  font-size: 13px;
+  line-height: 34px;
+  padding:0 10px;
+  color:#fff;
+}
+nav>.container ul li a:link,nav>.container ul li a:visited {
+  text-decoration: none;
+}
+nav>.container ul li a:hover,nav>.container ul li a:active {
+  text-decoration: underline;
+  background:#0148CF;
+};
+//购物车
+.cart{
+  line-height: 34px;
+  a:link,a:visited{
+    text-decoration: none;
+    color:#fff;
+  };
+  a:hover,a:active {
+    color:#fff;
+    text-decoration: underline;
+    background:#0148CF;
+  };
+}
+
+
+
+
+
+
+/*页尾*/
+.footer1{
+  border:1px solid #ccc;
+  box-sizing: border-box;
+  padding:10px;
+  ul:nth-child(2){
+    li{height: 30px;text-align: center}
+  }
+  li{
+    float:left;
+    span{margin:0 8px;}
+  }
+}
+
+.footer2{
+  margin-top:10px;
+  padding-top:10px;
+  border-top:1px solid #ccc;
+  .info{float: left;
+    width:340px;
+    margin-right:20px;
+    border-right:1px solid #ccc;
+    box-sizing: border-box;
+    li{
+      float:left;
+      width:160px;
+      margin-bottom:10px;
+      a{display: block;}
+      p{font-weight: bold;
+        margin-bottom:2px;
+      }
+    }
+
+  }
+  .subscribe{
+    box-sizing: border-box;
+    float:left;
+    width:360px;
+    padding-right:20px;
+    border-right:1px solid #ccc;
+    >div{
+      height:32px;
+      margin-bottom:20px;
+    }
+    form{
+      label{font-weight:bold}
+      margin-top:20px;
+      input{height:20px;
+        width:200px;
+        border:1px solid #C03139;
+        margin-bottom:10px;
+      }
+      button{
+        height:28PX;
+        width:80px;
+        color:#fff;
+        background:#C03139;
+        margin-left:38px;
+        border:none;
+
+      }
+    }
+  }
+  .secures{
+    width:280px;
+    box-sizing: border-box;
+    float:left;
+    padding-left:20px;
+    P{margin:5px 0;
+      width:260px;
+      height:32px;
+      a{margin-right:5px;}
+    }
+    .tagList{
+      margin-top:20px;
+    }
+  }
+}
+.footer3{
+  text-align: center;
+  margin-top:20px;
+  padding: 20px;
+  border-top:1px solid #ccc;
+}

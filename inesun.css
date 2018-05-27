@@ -1,0 +1,258 @@
+.banner {
+  height: 284px;
+  position: relative;
+}
+.banner ul {
+  width: 1000px;
+  height: 284px;
+  position: relative;
+}
+.banner ul li {
+  width: 1000px;
+  height: 284px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+}
+.banner .indicator {
+  position: absolute;
+  left: 430px;
+  bottom: 31px;
+  height: 14px;
+  text-align: center;
+  z-index: 40;
+}
+.banner .indicator a {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  background: #0148CF;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+.banner .indicator .active {
+  background: #f90;
+}
+section h1 {
+  padding: 15px 0 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+.TDleft {
+  margin-top: 15px;
+  box-sizing: border-box;
+  float: left;
+  width: 420px;
+}
+.TDleft div {
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 420px;
+  height: 180px;
+  position: relative;
+}
+.TDleft div p {
+  width: 230px;
+  overflow: hidden;
+}
+.TDleft div .prName {
+  height: 38px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.TDleft div .prInt {
+  height: 34px;
+  margin-top: 4px;
+}
+.TDleft div .prModel {
+  height: 18px;
+  margin-top: 6px;
+}
+.TDleft div .listPrice {
+  height: 14px;
+  margin-top: 4px;
+}
+.TDleft div .pirce {
+  height: 20px;
+  font-size: 17px;
+  font-weight: bold;
+}
+.TDleft div .freeshipping {
+  height: 14px;
+  margin-top: 2px;
+  color: #589320;
+}
+.TDleft div a > img {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+.TDright {
+  margin-top: 15px;
+  float: right;
+  box-sizing: border-box;
+  width: 570px;
+}
+.TDright div {
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 280px;
+  height: 370px;
+  float: left;
+  position: relative;
+}
+.TDright div a > img {
+  margin-left: 25px;
+}
+.TDright .prName {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+.TDright .prInt {
+  height: 34px;
+}
+.TDright .prModel {
+  height: 18px;
+  margin-top: 6px;
+}
+.TDright .listPrice {
+  height: 14px;
+  margin-top: 4px;
+}
+.TDright .pirce {
+  height: 20px;
+  font-size: 17px;
+  font-weight: bold;
+}
+.TDright .freeshipping {
+  height: 14px;
+  margin-top: 2px;
+  color: #589320;
+}
+.TDright > div:nth-child(2),
+.TDright > div:nth-child(4) {
+  margin-left: 10px;
+}
+ul.TDlist li,
+ul.SOlist li {
+  float: left;
+  margin: 15px 8px;
+  width: 184px;
+}
+ul.TDlist li div,
+ul.SOlist li div {
+  height: 14px;
+  margin-top: 2px;
+  color: #589320;
+}
+ul.TDlist li a img,
+ul.SOlist li a img {
+  padding: 0 17px;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #ccc;
+}
+ul.TDlist li .prInt,
+ul.SOlist li .prInt {
+  margin-top: 5px;
+  height: 46px;
+  overflow: hidden;
+}
+ul.TDlist li .prModel,
+ul.SOlist li .prModel {
+  height: 16px;
+  overflow: hidden;
+  margin: 2px 0 4px 0;
+}
+ul.TDlist li .pric,
+ul.SOlist li .pric {
+  font-weight: bold;
+  color: #900;
+}
+ul.TDlist li .whPirce,
+ul.SOlist li .whPirce {
+  margin-bottom: 3px;
+}
+ul.SOlist li {
+  box-sizing: border-box;
+}
+ul.SOlist li h3 {
+  border: 1px solid #ccc;
+  height: 165px;
+  position: relative;
+}
+ul.SOlist li h3 a img {
+  border: none;
+}
+ul.SOlist li h3 span {
+  background: url('../prImg/SOflag.png');
+  width: 79px;
+  line-height: 24px;
+  color: #fff;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.FPlist li,
+ul.VSlist li {
+  float: left;
+  width: 310px;
+  margin: 10px 11px 6px 11px;
+  box-sizing: border-box;
+}
+.FPlist li div,
+ul.VSlist li div {
+  height: 14px;
+  margin-top: 20px;
+  color: #589320;
+}
+.FPlist li p,
+ul.VSlist li p {
+  overflow: hidden;
+}
+.FPlist li .prName,
+ul.VSlist li .prName {
+  height: 30px;
+  margin-top: 12px;
+  font-size: 13px;
+  font-weight: bold;
+}
+.FPlist li .prInt,
+ul.VSlist li .prInt {
+  height: 31px;
+  margin-bottom: 10px;
+}
+.FPlist li a > img,
+ul.VSlist li a > img {
+  float: left;
+  margin-right: 6px;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+}
+.FPlist li .pric,
+ul.VSlist li .pric {
+  margin-top: 20px;
+  color: #900;
+}
+.FPlist li .buyNow,
+ul.VSlist li .buyNow {
+  margin-top: 10px;
+  background: #B32D2C;
+  width: 62px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+}
+.FPlist li .buyNow a,
+ul.VSlist li .buyNow a {
+  color: #fff;
+}

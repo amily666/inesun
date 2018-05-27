@@ -1,0 +1,253 @@
+
+//广告轮播。
+
+.banner{
+  height: 284px;
+  position: relative;
+ul{
+  width: 1000px;
+  height:284px;
+  position:relative;
+  li{
+    width: 1000px;
+    height:284px;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 10;
+    display: none;
+  }
+}
+  .indicator {
+    position: absolute;
+    left: 430px;
+    bottom: 31px;
+    //width: 100%;
+    height: 14px;
+    text-align: center;
+    z-index: 40;
+    a {
+      width: 14px;
+      height: 14px;
+      display: inline-block;
+      background: #0148CF;
+      border-radius: 50%;
+      margin:0 5px;
+    }
+    .active {
+      background: #f90;
+    }
+  }
+}
+//主体
+//左边框框的
+
+section h1{
+  padding:15px 0 10px 0;
+  border-bottom:1px solid #ccc;}
+.TDleft{
+  margin-top:15px;
+  box-sizing: border-box;
+  float:left;
+  width:420px;
+  div{
+    margin-bottom:10px;
+    box-sizing: border-box;
+    border:1px solid #ccc;
+    padding:10px;
+    width: 420px;
+    height:180px;
+    position:relative;
+    p{width:230px;
+      overflow: hidden;
+    }
+    .prName{
+      height:38px;
+      font-size:14px;
+      font-weight: bold;
+    }
+    .prInt{
+      height:34px;
+      margin-top:4px;
+    }
+    .prModel{height:18px;
+      margin-top:6px}
+    .listPrice{
+      height:14px;
+      margin-top:4px;
+    }
+    .pirce{
+      height:20px;
+      font-size:17px;
+      font-weight: bold;
+    }
+    .freeshipping{
+      height:14px;
+      margin-top:2px;
+      color:#589320
+    }
+
+    a>img{
+      width: 150px;
+      height: 150px;
+      position:absolute;
+      top:15px;
+      right:10px;
+    }
+  }
+}
+
+//右边框框
+.TDright{
+  margin-top:15px;
+  float:right;
+  box-sizing: border-box;
+  width:570px;
+  div{
+    margin-bottom:10px;
+    box-sizing: border-box;
+    border:1px solid #ccc;
+    padding:10px;
+    width:280px;
+    height:370px;
+    float:left;
+    position:relative;
+    a>img{
+      margin-left:25px;
+    }
+  }
+  .prName{
+    font-size:14px;
+    font-weight: bold;
+    text-align:center;
+  }
+  .prInt{
+    height:34px;
+  }
+  .prModel{height:18px;
+    margin-top:6px}
+  .listPrice{
+    height:14px;
+    margin-top:4px;
+  }
+  .pirce{
+    height:20px;
+    font-size:17px;
+    font-weight: bold;
+  }
+  .freeshipping{
+    height:14px;
+    margin-top:2px;
+    color:#589320
+  }
+}
+.TDright>div:nth-child(2),.TDright>div:nth-child(4){
+  margin-left:10px
+}
+//今日新品
+ul.TDlist,ul.SOlist{
+  li{
+    float:left;
+    margin:15px 8px;
+    width:184px;
+    div{
+      height:14px;
+      margin-top:2px;
+      color:#589320
+    }
+    a img{
+      padding:0 17px;
+      width:150px;
+      height:150px;
+      border:1px solid #ccc;
+    }
+    .prInt{
+      margin-top:5px;
+      height:46px;
+      overflow:hidden;
+    }
+    .prModel{
+      height:16px;
+      overflow:hidden;
+      margin:2px 0 4px 0;
+    }
+    .pric{
+      font-weight:bold;
+      color:#900;
+    }
+    .whPirce{
+      margin-bottom:3px;
+    }
+  }
+}
+//优惠特选
+ul.SOlist {
+ li{
+   box-sizing: border-box;
+   h3{
+   border:1px solid #ccc;
+   height:165px;
+   position:relative;
+   a img{border:none}
+     span{
+       background:url('../prImg/SOflag.png');
+       width:79px;
+       line-height:24px;
+       color:#fff;
+       font-size:12px;
+        position:absolute;
+        bottom:0;
+        left:0;
+     }
+ }}
+
+}
+//特色商品 //硬盘录像机套装 Video SURVELLIANCE SYSTEM
+.FPlist,ul.VSlist{
+    li{
+      float: left;
+      width:310px;
+      margin:10px 11px 6px 11px;
+      box-sizing: border-box;
+
+      div{
+        height:14px;
+        margin-top:20px;
+        color:#589320;
+      }
+      p{overflow: hidden}
+     .prName{
+        height:30px;
+        margin-top:12px;
+        font-size:13px;
+        font-weight:bold;
+     }
+      .prInt{
+        height:31px;
+        margin-bottom:10px;
+      }
+      a>img{
+        float: left;
+        margin-right:6px;
+        box-sizing: border-box;
+        border:1px solid transparent;
+      }
+      .pric{
+        margin-top:20px;
+        color:#900;
+      }
+      .buyNow{
+        margin-top:10px;
+        background:#B32D2C;
+        width:62px;
+        padding:5px;
+        text-align: center;
+        border-radius:5px;
+        a{color:#fff;
+        }
+      }
+
+    }
+
+}
+
